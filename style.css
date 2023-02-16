@@ -1,0 +1,180 @@
+/* FG link */
+
+.acf-field-6300743c9f39d a {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.page-id-32 .fea-submit-button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.fastgrade .response_form_wrapper .field_wrapper{
+    margin-bottom: 15px;
+}
+.fastgrade label,
+.fastgrade p{
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.fastgrade [type="submit"]{
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.fastgrade [type="submit"]:hover{
+    background: #fff;
+    color: black;
+    border: 1px solid #000;
+}
+
+/* Action Buttons */
+
+a.response_action_btn {
+    font-size: 14px;
+    color: #fff;
+    padding: 15px 15px;
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+a.btn-blue {
+    background-color: #25bdef;
+}
+
+a.btn-yellow {
+    background-color: #fcb12b;
+}
+
+a.btn-green {
+    background-color: #61ce70;
+}
+
+
+.acf-field-63d387c2fc08a a {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.priv-req-container{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    opacity: 0.9;
+    background: transparent;
+    z-index: 40000;
+    top:0;
+    left: 0;
+    overflow: hidden;
+    animation-name: fadeIn_Container;
+    animation-duration: 1s;
+}
+
+.sb-modal{
+    display:none;
+    top: 30%;
+    right: 15%;
+    min-width: 250px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 40001;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
+    margin-top: 30px;
+    animation-name: fadeIn_Modal;
+    animation-duration: 0.8s;
+
+}
+
+.sb-header{
+    width: 100%;
+    height: 25px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.sb-header a{
+    text-decoration: none;
+    float: right;
+    line-height: 70px;
+    margin-right: 20px;
+    color: #aaa;
+}
+button.sb-open {
+    background-color: #FF6767 !important;
+}
+
+.content{
+    width: 100%;
+    height: 250px;
+}
+
+form{
+    margin-top: 20px;
+}
+
+.sb-footer{
+    width: 100%;
+    height: 80px;
+    border-radius: 0px 0px 10px 10px;
+}
+/****MEDIA QUERIES****/
+
+@media screen and (max-width: 800px){
+
+.sb-modal{
+    top:0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    margin-left: calc(50vw - 400px);
+    margin-top: calc(50vh - 54px);
+}
+
+
+.sb-header{
+    width: 100%;
+    height: 40px;
+}
+
+.sb-header a{
+    line-height: 40px;
+    margin-right: 10px;
+}
+
+
+.sb-footer{
+    width: 100%;
+    height: 70px;   
+}
+
+.sb-footer button{
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+}
+
+
+/****ANIMATIONS****/
+
+@keyframes fadeIn_Modal {
+from{
+    opacity: 0;
+}
+to{
+    opacity: 1;
+}
+}
+
+@keyframes fadeIn_Container {
+from{
+    opacity: 0;
+}
+to{
+    opacity: 0.9;
+}
+}
